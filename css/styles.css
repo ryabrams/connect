@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main#content {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 1rem;
+}
+
+#profilePic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#platformSelect {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+#qrImage {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  max-width: 200px;
+  margin: 1rem auto;
+}
+
+#qrImage.visible {
+  opacity: 1;
+}
+
+/* Theme styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  main#content {
+    margin: 2rem 1rem;
+  }
+}

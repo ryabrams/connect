@@ -1,7 +1,7 @@
 # Connect with Ryan Abrams
 
 ## 📌 Overview
-A simple, responsive webpage hosted on a subdomain allowing visitors to connect with Ryan Abrams via QR codes for LinkedIn, X (Twitter), or Instagram.
+A simple, responsive webpage hosted on a subdomain allowing visitors to select how to connect. A selection will display a QR code for the chosen method.
 
 ## 🚀 Functionality
 - Select a social platform from a dropdown menu to reveal the corresponding QR code with a fade-in effect.

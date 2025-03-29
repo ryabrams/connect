@@ -1,7 +1,8 @@
 const qrImages = {
   linkedin: "images/linkedin_qr.png",
   x: "images/x_qr.png",
-  instagram: "images/instagram_qr.png"
+  instagram: "images/instagram_qr.png",
+  github: "images/github_qr.png" // Updated to include GitHub
 };
 
 const profileSelect = document.getElementById('platformSelect');

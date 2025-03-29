@@ -32,9 +32,14 @@ p {
 }
 
 #platformSelect {
-  font-size: 1rem;
-  padding: 0.5rem;
-  margin: 1.5rem 0;
+  display: block; /* Ensures it behaves like a block element */
+  margin: 0 auto; /* Centers the dropdown horizontally */
+  padding: 10px; /* Adds some padding for better appearance */
+  font-size: 16px; /* Adjusts font size for readability */
+  text-align: center; /* Centers the text inside the dropdown */
+  border: 1px solid #ccc; /* Optional: Adds a border */
+  border-radius: 5px; /* Optional: Rounds the corners */
+  background-color: #f9f9f9; /* Optional: Sets a light background */
 }
 
 #qrImage {

@@ -46,3 +46,22 @@ window.addEventListener('DOMContentLoaded', () => {
   profileSelect.value = "linkedin";
   showQr("linkedin");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const platformSelect = document.getElementById("platformSelect");
+  const qrImage = document.getElementById("qrImage");
+
+  platformSelect.addEventListener("change", () => {
+    const selectedPlatform = platformSelect.value;
+
+    if (selectedPlatform) {
+      // Update the QR code image source based on the selected platform
+      qrImage.src = `images/${selectedPlatform}-qr.png`;
+      qrImage.alt = `QR code for ${selectedPlatform}`;
+    } else {
+      // Clear the QR code image if no valid option is selected
+      qrImage.src = "";
+      qrImage.alt = "QR code";
+    }
+  });
+});

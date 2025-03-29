@@ -44,8 +44,11 @@ themeToggleBtn.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme') || 'light';
   applyTheme(savedTheme);
-  profileSelect.value = "linkedin";
-  showQr("linkedin");
+
+  // Set the default value of the dropdown to the disabled option
+  profileSelect.value = "";
+  qrImage.src = ""; // Clear the QR code image
+  qrImage.alt = "QR code"; // Reset the alt text
 });
 
 document.addEventListener("DOMContentLoaded", () => {

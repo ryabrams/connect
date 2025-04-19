@@ -1,0 +1,162 @@
+:root {
+    --light-blue: #add8e6;
+    --dark-blue: #00008b;
+    --yellow: #ffd700;
+    --white: #ffffff;
+    --gray: #808080;
+    --dark-gray: #a9a9a9;
+    --light-gray: #d3d3d3;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--light-blue), var(--white), var(--light-blue));
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > * {
+    margin-bottom: 20px;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 200px;
+    height: 200px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    color: var(--dark-gray);
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.contact-text {
+    margin-left: 10px;
+    color: var(--dark-blue);
+}
+
+.social {
+    text-align: center;
+    color: var(--gray);
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.add-to-contacts {
+    width: 100%;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.add-to-contacts .icon {
+    background-color: var(--light-gray);
+    margin-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .profile-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .contact-text {
+        font-size: 0.9em;
+    }
+}
